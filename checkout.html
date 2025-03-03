@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <script src="script2.js" defer></script>
+</head>
+<body>
+    <h1>Thông tin thanh toán</h1>
+    <form onsubmit="return submitOrder()">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="address">Địa chỉ:</label>
+        <input type="text" id="address" required><br>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" id="phone" required><br>
+
+        <h2>Tổng tiền: <span id="checkout-total">0</span> VNĐ</h2>
+
+        <button type="submit">Đặt hàng</button>
+    </form>
+</body>
+</html>
